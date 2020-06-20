@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ssh远程免密登录 | Blog of R. Chow.</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/vuepressBlog/favicon.ico">
+    <meta name="description" content="A simple and beautiful vuepress blog theme .">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/vuepressBlog/assets/css/0.styles.2c22b78c.css" as="style"><link rel="preload" href="/vuepressBlog/assets/js/app.7eb19f8c.js" as="script"><link rel="preload" href="/vuepressBlog/assets/js/3.b623df7a.js" as="script"><link rel="preload" href="/vuepressBlog/assets/js/1.e2cdd9cd.js" as="script"><link rel="preload" href="/vuepressBlog/assets/js/12.0148c3f2.js" as="script"><link rel="prefetch" href="/vuepressBlog/assets/js/10.010e1ba3.js"><link rel="prefetch" href="/vuepressBlog/assets/js/11.5388c883.js"><link rel="prefetch" href="/vuepressBlog/assets/js/13.15a97cfd.js"><link rel="prefetch" href="/vuepressBlog/assets/js/14.f2dfc853.js"><link rel="prefetch" href="/vuepressBlog/assets/js/15.dc1d2db7.js"><link rel="prefetch" href="/vuepressBlog/assets/js/4.2d4ed2a1.js"><link rel="prefetch" href="/vuepressBlog/assets/js/5.40fa8d3f.js"><link rel="prefetch" href="/vuepressBlog/assets/js/6.dbaedc68.js"><link rel="prefetch" href="/vuepressBlog/assets/js/7.25fbbb4b.js"><link rel="prefetch" href="/vuepressBlog/assets/js/8.12de0ab6.js"><link rel="prefetch" href="/vuepressBlog/assets/js/9.b8c34a1f.js">
+    <link rel="stylesheet" href="/vuepressBlog/assets/css/0.styles.2c22b78c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Blog of R. Chow.</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zxk</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepressBlog/" class="home-link router-link-active"><img src="/vuepressBlog/logo.png" alt="Blog of R. Chow." class="logo"> <span class="site-name">Blog of R. Chow.</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepressBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepressBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepressBlog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-042e23d4><img src="/vuepressBlog/avatar.png" alt="author-avatar" class="personal-img" data-v-042e23d4> <h3 class="name" data-v-042e23d4>
+    zxk
+  </h3> <div class="num" data-v-042e23d4><div data-v-042e23d4><h3 data-v-042e23d4>4</h3> <h6 data-v-042e23d4>Article</h6></div> <div data-v-042e23d4><h3 data-v-042e23d4>7</h3> <h6 data-v-042e23d4>Tag</h6></div></div> <hr data-v-042e23d4></div> <nav class="nav-links"><div class="nav-item"><a href="/vuepressBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Javascript/" class="nav-link"><i class="iconfont undefined"></i>
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressBlog/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepressBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/vuepressBlog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div> <!----></nav>  <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>ssh远程免密登录</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zxk</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>ssh远程免密登录</h1> <hr> <div data-v-34ea29db><i class="iconfont reco-account" data-v-34ea29db><span data-v-34ea29db>zxk</span></i> <i class="iconfont reco-date" data-v-34ea29db><span data-v-34ea29db>2020-02-15</span></i> <!----> <i class="iconfont reco-tag tags" data-v-34ea29db><span class="tag-item" data-v-34ea29db>SSH</span><span class="tag-item" data-v-34ea29db>Linux</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="ssh远程免密登录"><a href="#ssh远程免密登录" class="header-anchor">#</a> ssh远程免密登录</h1> <h3 id="利用ssh-key实现linux免密访问github"><a href="#利用ssh-key实现linux免密访问github" class="header-anchor">#</a> 利用ssh key实现Linux免密访问github</h3> <p>使用git bash的windows用户或者linux用户对上传到远端版本库软件（github，gitee等代码托管仓库）时，
+发现每次git push 或者是 git pull等命令是需要输入自己的账号和密钥时，
+一次两次还好，每次都做这没啥技术含量的动作，就感觉很繁琐和烦躁，
+所以，学会使用ssh免密访问必不可少，对我们之后的工作，学习都有好处（这里以linux命令为演示，Windows用git bash一样的处理）</p> <h3 id="_1-生成ssh-key，使用默认保存位置（注意要求输入密码时直接回车，否则每次要输密码）"><a href="#_1-生成ssh-key，使用默认保存位置（注意要求输入密码时直接回车，否则每次要输密码）" class="header-anchor">#</a> 1 生成ssh key，使用默认保存位置（注意要求输入密码时直接回车，否则每次要输密码）</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># ssh-keygen -t rsa</span>
+Generating public/private rsa key pair.
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/root/.ssh/id_rsa<span class="token punctuation">)</span>: 
+Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>: 
+Enter same passphrase again: 
+Your identification has been saved <span class="token keyword">in</span> /root/.ssh/id_rsa.
+Your public key has been saved <span class="token keyword">in</span> /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:CvE7bPPDYb1EnQsGsDjs8uqUoiW2XH8g36ycVixmJBw root@localhost.localdomain
+The key's randomart image is:
++---<span class="token punctuation">[</span>RSA <span class="token number">2048</span><span class="token punctuation">]</span>----+
+<span class="token operator">|</span>      <span class="token punctuation">..</span>         <span class="token operator">|</span>
+<span class="token operator">|</span>   E <span class="token builtin class-name">.</span> <span class="token punctuation">..</span>        <span class="token operator">|</span>
+<span class="token operator">|</span>  <span class="token builtin class-name">.</span> * <span class="token builtin class-name">.</span>  <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>   + <span class="token operator">=</span>    + o    <span class="token operator">|</span>
+<span class="token operator">|</span>  <span class="token builtin class-name">.</span> <span class="token operator">=</span> o S+ <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>   <span class="token operator">=</span> B <span class="token operator">=</span>o o <span class="token builtin class-name">.</span>    <span class="token operator">|</span>
+<span class="token operator">|</span>o.+.* <span class="token operator">&amp;</span>o o <span class="token builtin class-name">.</span>     <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token operator">+=</span>o.o+.Bo <span class="token builtin class-name">.</span>      <span class="token operator">|</span>
+<span class="token operator">|</span>.+o .<span class="token operator">=</span>o <span class="token punctuation">..</span>       <span class="token operator">|</span>
++----<span class="token punctuation">[</span>SHA256<span class="token punctuation">]</span>-----+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="_2-将公钥文件-root-ssh-id-rsa-pub上传到github"><a href="#_2-将公钥文件-root-ssh-id-rsa-pub上传到github" class="header-anchor">#</a> 2 将公钥文件/root/.ssh/id_rsa.pub上传到github</h3> <p>在个人用户头像选择settings–&gt;&gt;SSH and GPG keys</p> <p>显示如下</p> <p><img src="https://img-blog.csdn.net/20180609185051636" alt="ssh"></p> <p>用命令行输入指令并复制显示出来的数据（或用记事本打开文件，然后拷贝内容到github）</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#cd</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#cd .ssh/</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#cat id_rsa.pub</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://img-blog.csdn.net/20180609185425339" alt="key"></p> <h3 id="_3-测试（切换为ssh方式，而不是默认的http方式）"><a href="#_3-测试（切换为ssh方式，而不是默认的http方式）" class="header-anchor">#</a> 3 测试（切换为ssh方式，而不是默认的http方式）</h3> <p><img src="https://img-blog.csdn.net/20180609190534672" alt="test"></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost github<span class="token punctuation">]</span><span class="token comment"># git remote add origin git@github.com:username/repository.git</span>
+//username:你的github或其它远程代码托管仓库的用户名，repository:你的克隆仓库
+<span class="token punctuation">[</span>root@localhost github<span class="token punctuation">]</span><span class="token comment"># git push -u origin master</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/20/2020, 4:43:48 PM</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/vuepressBlog/assets/js/app.7eb19f8c.js" defer></script><script src="/vuepressBlog/assets/js/3.b623df7a.js" defer></script><script src="/vuepressBlog/assets/js/1.e2cdd9cd.js" defer></script><script src="/vuepressBlog/assets/js/12.0148c3f2.js" defer></script>
+  </body>
+</html>
